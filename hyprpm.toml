@@ -2,7 +2,8 @@
 name = "hypractive"
 authors = ["sh224"]
 commit_pins = [
-    ["dd220efe7b1e292415bd0ea7161f63df9c95bfd3", "b269aa077431d0714401aead082a648b78118657"] # 0.53.3
+    ["dd220efe7b1e292415bd0ea7161f63df9c95bfd3", "b269aa077431d0714401aead082a648b78118657"], # 0.53.3
+    ["0002f148c9a4fe421a9d33c0faa5528cdc411e62", "d06a2276dc5d705be6290e230104f7d457d5df0e"]  # 0.54.0
 ]
 
 [hypractive]
