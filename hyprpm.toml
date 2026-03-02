@@ -1,0 +1,15 @@
+[repository]
+name = "hypractive"
+authors = ["sh224"]
+commit_pins = [
+    ["dd220efe7b1e292415bd0ea7161f63df9c95bfd3", "b269aa077431d0714401aead082a648b78118657"] # 0.53.3
+]
+
+[hypractive]
+description = "A plugin to add a minimally intrusive active window indicator."
+authors = ["sh224"]
+output = "hypractive.so"
+build = [
+    "make all",
+]
+
