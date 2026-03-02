@@ -58,7 +58,7 @@ void CHyprdot::draw(PHLMONITOR pMonitor, const float& a) {
     static auto* const PDGROUP = (Hyprlang::INT* const*)HyprlandAPI::getConfigValue(PHANDLE, "plugin:hypractive:decorate_grouped")->getDataStaticPtr();
     if (**PDFLOAT == 0 && PWINDOW->m_isFloating)
         return;
-    if (**PDGROUP == 0 && PWINDOW->m_groupData.pNextWindow)
+    if (**PDGROUP == 0 && PWINDOW->m_group)
         return;
 
     CDotPassElement::SDotData data;
