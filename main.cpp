@@ -54,8 +54,6 @@ APICALL EXPORT PLUGIN_DESCRIPTION_INFO PLUGIN_INIT(HANDLE handle) {
         HyprlandAPI::addWindowDecoration(PHANDLE, w, makeUnique<CHyprdot>(w));
     }
 
-    HyprlandAPI::addNotification(PHANDLE, "[hypractive] Initialized successfully!", CHyprColor{0.2, 1.0, 0.2, 1.0}, 5000);
-
     return {"hypractive", "A plugin to add a minimally intrusive active window indicator.", "sh", "1.0"};
 }
 
