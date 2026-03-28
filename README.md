@@ -1,13 +1,14 @@
 # hypractive
 
-Adds a minimally intrusive active window indicator,
-in the form of a dot in the top right corner of the active window.
+Adds a minimalistic indicator in the top right corner of the active window.
 
 Example config:
 
 ```
 plugin {
     hypractive {
+        enabled = true
+
         dot_size = 16
         dot_color = rgba(ffffffaa)
 

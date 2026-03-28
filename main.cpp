@@ -33,6 +33,7 @@ APICALL EXPORT PLUGIN_DESCRIPTION_INFO PLUGIN_INIT(HANDLE handle) {
         throw std::runtime_error("[hypractive] Version mismatch");
     }
 
+    HyprlandAPI::addConfigValue(PHANDLE, "plugin:hypractive:enabled", Hyprlang::INT{1});
     HyprlandAPI::addConfigValue(PHANDLE, "plugin:hypractive:dot_size", Hyprlang::INT{10});
     HyprlandAPI::addConfigValue(PHANDLE, "plugin:hypractive:dot_offset_x", Hyprlang::INT{0});
     HyprlandAPI::addConfigValue(PHANDLE, "plugin:hypractive:dot_offset_y", Hyprlang::INT{0});

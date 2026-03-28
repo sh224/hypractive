@@ -46,7 +46,8 @@ std::string CHyprdot::getDisplayName() {
 }
 
 void CHyprdot::draw(PHLMONITOR pMonitor, const float& a) {
-    if (!validMapped(m_pWindow))
+    static auto* const PENABLED = (Hyprlang::INT* const*)HyprlandAPI::getConfigValue(PHANDLE, "plugin:hypractive:enabled")->getDataStaticPtr();
+    if (!validMapped(m_pWindow) || !**PENABLED)
         return;
 
     const auto PWINDOW = m_pWindow.lock();
